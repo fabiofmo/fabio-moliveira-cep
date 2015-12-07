@@ -29,3 +29,6 @@ Explicação de algumas packages:
 - MySQL: pré-requisito
   - Arquivo "cedrobks_t_cep.sql": script para criar o schema 'cedrobks' e a tabela 't_cep' da aplicação
 
+- Evidencia de testes
+  - Arquivo "evidencias_testes.doc" com prints dos testes realizados na maquina de desenvolvimento
+

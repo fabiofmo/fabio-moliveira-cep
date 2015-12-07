@@ -21,7 +21,7 @@ Explicação de algumas packages:
   - CepDAO.java: classe para interação com o banco de dados (insert/findCep/cepExists) 
 
 - Package util
-  - CepUtil.java: funções simples para formatar, limpar (tirar "-") e validar o tamanho do CEP
+  - CepUtil.java: funções simples para formatar, limpar (tirar "-") e validação simples de tamanho e caracteres do CEP
   - HibernateUtil.java: session factory
   - JSONUtil.java: funções para transformar um objeto em JSON (e vice-versa) e aplica regras para inserir um JSON na base (insertJson)
   - hibernate.cfg.xml: configurações para acesso ao banco (username/password devem ser alterados aqui)

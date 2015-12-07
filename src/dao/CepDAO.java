@@ -35,42 +35,6 @@ public class CepDAO {
 		return retorno;	
 	}
 	
-	public boolean updateCep(Cep cep){
-		boolean retorno = false;
-		try {
-			sessao = HibernateUtil.getSessionFactory().openSession();			
-			transacao = sessao.beginTransaction();
-			sessao.update(cep);
-			transacao.commit();			
-			retorno = true;
-		} catch (HibernateException e) {
-			transacao.rollback();
-			retorno = false;
-		} finally {
-			sessao.close();
-		}
-		return retorno;
-	}
-	
-	public boolean removeCep(Cep cep){
-		boolean retorno = false;
-		try{
-			sessao = HibernateUtil.getSessionFactory().openSession();
-			transacao = sessao.beginTransaction();
-			sessao.delete(sessao.get(Cep.class, cep.getId()));
-			transacao.commit();
-			retorno = true;
-			
-		} catch(HibernateException e){
-			transacao.rollback();
-			e.printStackTrace();
-			
-		} finally{
-			sessao.close();
-		}		
-		return retorno;		
-	}	
-	
 	@SuppressWarnings("unchecked")
 	public Cep findCep(String cep){			
 		Cep cepFound = new Cep();

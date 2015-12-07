@@ -9,7 +9,7 @@ CedroBKS
 - Jersey RESTful WebService (especificação JAX-RS 2.0):  desenvolvimento serviços server e client REST
   - CepServiceClient.java (package services): faz a chamada ao serviço de cadastro (POST), enviando um JSON com as informações do CEP
   - antes do envio, o conteudo do JSON é impresso no console, para simples conferencia
-  - Após envio, server retorna um JSON e seu conteudo é no console
+  - Após envio, server retorna um JSON e seu conteudo é também impresso no console para conferencia
 
 Explicação de algumas packages:
 - Package services
